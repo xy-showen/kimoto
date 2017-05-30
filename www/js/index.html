@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html ng-app="kimoto">
+
+<head>
+    <title>纪本科技</title>
+    <meta charset="utf-8">
+    <link href="/static/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="main">
+    <div ng-controller="MainCtrl">
+        <img class="header-image" src="/static/image/header.jpg">
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li class="text-center first-level">
+                    <a href="/home">首页</a>
+                </li>
+                <li class="text-center first-level">
+                    <a href="#">
+                        关于我们
+                        <span class="caret"></span>
+                    </a>
+                    <div class="second-level">
+                        <div class="second-div">
+                            <a href="/us/brief">公司简介</a>
+                        </div>
+                        <div class="second-div">
+                            <a href="/us/chairman">董事长寄语</a>
+                        </div>
+                        <div class="second-div">
+                            <a href="/us/history">总部历史</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="text-center first-level">
+                    <a href="#">
+                        产品中心
+                        <span class="caret"></span>
+                    </a>
+                    <div class="second-level">
+                        <div class="second-div">
+                            <a href="">大气监测系统</a>
+                        </div>
+                        <div class="second-div">
+                            <a href="">化学成分检测系统</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="text-center first-level">
+                    <a href="#">
+                        项目合作
+                        <span class="caret"></span>
+                    </a>
+                    <div class="second-level">
+                        <div class="second-div">
+                            <a href="">国际合作</a>
+                        </div>
+                        <div class="second-div">
+                            <a href="">名校合作</a>
+                        </div>
+                        <div class="second-div">
+                            <a href="">科研单位合作</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="text-center first-level">
+                    <a href="#">
+                        诚聘英才
+                        <span class="caret"></span>
+                    </a>
+                    <div class="second-level">
+                        <div class="second-div">
+                            <a href="/team/build">联系我们</a>
+                        </div>
+                        <div class="second-div">
+                            <a href="/team/build">团队建设</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="last"><a href="http://www.kimoto-electric.co.jp/english/index.html" target='_blank'>English</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div ui-view>
+    </div>
+    <div class="footer">
+        <div class="info">
+            <ul class="footer-links">
+                <li class="text-capitalize">联系方式：010-68686</li>
+                <li class="text-capitalize">地址：北京市朝阳区双营路</li>
+                <li>© 2017 www.kimoto-electric.com</li>
+                <li class="text-capitalize">
+                    <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备17019975号</a>
+                </li>
+                <li class="last">
+                    <a href="http://www.kimoto-electric.co.jp/index.html" target='_blank'>总部链接</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src='/static/vendor.js'></script>
+    <script type="text/javascript" src='/static/bundle.js'></script>
+</body>
+
+</html>
