@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.config.base.js --inline --hot --content-base",
-    "build": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.base.js --bail"
+    "build": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.production.js --bail"
   },
   "keywords": [],
   "author": "",

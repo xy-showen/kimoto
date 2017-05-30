@@ -19,7 +19,6 @@ module.exports = {
         'vendor': [
             'angular',
             'jquery',
-            'lodash',
             'jquery-sticky',
             'angular-ui-router',
             'angular-ui-bootstrap'

@@ -1,5 +1,4 @@
 require('jquery');
-var _ = require('lodash');
 var { DetailConfig, MainCtrl } = require('./MainCtrl');
 var ngModule = angular
     .module('kimoto', [
