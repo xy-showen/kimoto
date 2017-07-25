@@ -1,3 +1,3 @@
-var newsTpl = require('./pages/newsTpl.html');
+var homeTpl = require('./pages/newsTpl.html');
 
-module.exports = { newsTpl };
+module.exports = { homeTpl };

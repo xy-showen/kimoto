@@ -11,7 +11,7 @@
 }
 
 .first-level {
-    width: 140px;
+    width: 120px;
 }
 
 .last {
@@ -24,7 +24,7 @@
 .second-level {
     display: none;
     position: absolute;
-    width: 140px;
+    width: 120px;
     left: 0;
     top: 50px;
     border: 1px solid #cfcfcf;
@@ -45,12 +45,20 @@
     background: #f6f6f6;
 }
 
+.home {
+    overflow: auto;
+}
+
+.group-news {
+    width: 70%;
+    float: left;
+}
+
 .news {
     border-bottom: 1px dotted #0083de;
     margin-bottom: 15px;
     padding-bottom: 5px;
     overflow: auto;
-    width: 100%;
     clear: both;
     .article_area_l {
         width: 90px;
@@ -62,7 +70,7 @@
             color: #777;
         }
         width: 89%;
-        float: right;
+        // float: right;
     }
     .ttl {
         text-decoration: none;
@@ -70,6 +78,40 @@
         color: #0083de;
         font-weight: bold;
         padding-bottom: 5px;
+    }
+}
+
+.home-product {
+    margin-right: 10px;
+    float: right;
+}
+
+.news-detail {
+    width: 550px;
+    margin:0 auto;
+    .p-text-indent {
+        text-indent: 35px;
+    }
+    .center-image {
+        float: left;
+    }
+    .article_area_l {
+        width: 400px;
+        float: left;
+        line-height: 130%;
+    }
+    .article_area_r {
+        width: 278px;
+        float: right;
+        line-height: 130%;
+    }
+}
+
+.product-detail {
+    width: 600px;
+    margin:0 auto;
+    .p-text-indent {
+        text-indent: 35px;
     }
 }
 
@@ -83,6 +125,8 @@
     color: #99979c;
     text-align: left;
     background-color: #2a2730;
+    // float: bottom;
+    // margin-bottom: 10px;
     .info {
         margin-top: 10px;
         margin-left: 20px;
@@ -124,7 +168,7 @@
     .chairman-image {
         width: 272px;
         float: left;
-        margin-bottom: 80pxs;
+        // margin-bottom: 80px;
         p {
             text-indent: 0px;
         }
@@ -145,6 +189,12 @@
     p {
         color: #777;
         text-indent: 35px;
+    }
+}
+
+.partner {
+    img {
+        width: 70%;
     }
 }
 
