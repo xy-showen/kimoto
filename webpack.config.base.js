@@ -60,6 +60,12 @@ module.exports = {
             to: 'image'
         }], {
             ignore: ['.DS_Store']
+        }),
+        new CopyWebpackPlugin([{
+            from: 'pdf',
+            to: 'pdf'
+        }], {
+            ignore: ['.DS_Store']
         })
     ],
     resolve: {
