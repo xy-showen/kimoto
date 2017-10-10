@@ -37,19 +37,34 @@ module.exports = {
         loaders: [{
             test: /\.js$/,
             exclude: /node_modules/,
-            loaders: ['ng-annotate', 'babel-loader?' + JSON.stringify(babelSettings)]
+            loaders: ['ng-annotate', 'babel-loader?' + JSON.stringify(babelSettings)],
+            query: {
+                name: '[name].[ext]?[hash]'
+            }
         }, {
             test: /\.scss$/,
-            loader: ExtractTextPlugin.extract(['css', 'sass'])
+            loader: ExtractTextPlugin.extract(['css', 'sass']),
+            query: {
+                name: '[name].[ext]?[hash]'
+            }
         }, {
             test: /\.css$/,
-            loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+            loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
+            query: {
+                name: '[name].[ext]?[hash]'
+            }
         }, {
             test: /\.(woff|woff2|ttf|eot|svg|png|gif|ico|jpg)($|\?)/,
-            loader: 'file-loader?name=' + '[name].[ext]'
+            loader: 'file-loader?name=' + '[name].[ext]',
+            query: {
+                name: '[name].[ext]?[hash]'
+            }
         }, {
             test: /\.(html|json|txt)$/,
-            loader: 'raw'
+            loader: 'raw',
+            query: {
+                name: '[name].[ext]?[hash]'
+            }
         }]
     },
     plugins: [
