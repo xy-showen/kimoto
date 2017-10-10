@@ -30,23 +30,17 @@ module.exports = {
     output: {
         path: path.join(projectDir, '../build'),
         publicPath: '/static/',
-        filename: '[name]-[chunkhash].js',
+        filename: '[name].js',
         chunkFilename: '[name]-[chunkhash].js'
     },
     module: {
         loaders: [{
             test: /\.js$/,
             exclude: /node_modules/,
-            loaders: ['ng-annotate', 'babel-loader?' + JSON.stringify(babelSettings)],
-            query: {
-                name: '[name].[ext]?[hash]'
-            }
+            loaders: ['ng-annotate', 'babel-loader?' + JSON.stringify(babelSettings)]
         }, {
             test: /\.scss$/,
-            loader: ExtractTextPlugin.extract(['css', 'sass']),
-            query: {
-                name: '[name].[ext]?[hash]'
-            }
+            loader: ExtractTextPlugin.extract(['css', 'sass'])
         }, {
             test: /\.css$/,
             loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
@@ -61,10 +55,7 @@ module.exports = {
             }
         }, {
             test: /\.(html|json|txt)$/,
-            loader: 'raw',
-            query: {
-                name: '[name].[ext]?[hash]'
-            }
+            loader: 'raw'
         }]
     },
     plugins: [
