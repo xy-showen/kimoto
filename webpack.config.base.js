@@ -30,7 +30,7 @@ module.exports = {
     output: {
         path: path.join(projectDir, '../build'),
         publicPath: '/static/',
-        filename: '[name].js',
+        filename: '[name]-[chunkhash].js',
         chunkFilename: '[name]-[chunkhash].js'
     },
     module: {
