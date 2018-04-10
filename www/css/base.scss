@@ -1,17 +1,42 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 @import '~angular-ui-bootstrap/dist/ui-bootstrap-csp.css';
+
+.margin-top-5 {
+    margin-top: 5px;
+}
+
+.margin-left-60 {
+    margin-left: 60px;
+}
+
 .main {
     width: 70%;
     margin: 0 auto;
+    font-family: STFangsong;
 }
 
-.header-image {
-    width: 100%;
-    height: 400px;
+.header {
+    .logo {
+        width: 149px;
+        height: 45px;
+    }
+
+    .lang {
+        font-size: 16px;
+        margin-top: 15px;
+        text-decoration: underline;
+    }
+
+    .header-image {
+        margin-top: 5px;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .first-level {
-    width: 120px;
+    font-weight: 900;
+    width: 140px;
 }
 
 .last {
@@ -24,7 +49,7 @@
 .second-level {
     display: none;
     position: absolute;
-    width: 120px;
+    width: 140px;
     left: 0;
     top: 50px;
     border: 1px solid #cfcfcf;
@@ -69,8 +94,7 @@
         a {
             color: #777;
         }
-        width: 89%;
-        // float: right;
+        width: 89%; // float: right;
     }
     .ttl {
         text-decoration: none;
@@ -88,7 +112,7 @@
 
 .news-detail {
     width: 550px;
-    margin:0 auto;
+    margin: 0 auto;
     .p-text-indent {
         text-indent: 35px;
     }
@@ -109,7 +133,7 @@
 
 .product-detail {
     width: 600px;
-    margin:0 auto;
+    margin: 0 auto;
     .p-text-indent {
         text-indent: 35px;
     }
@@ -124,8 +148,7 @@
     padding-bottom: 10px;
     color: #99979c;
     text-align: left;
-    background-color: #2a2730;
-    // float: bottom;
+    background-color: #2a2730; // float: bottom;
     // margin-bottom: 10px;
     .info {
         margin-top: 10px;
@@ -135,7 +158,7 @@
             padding-left: 0;
             li {
                 display: inline-block;
-                & + li {
+                &+li {
                     margin-left: 15px;
                 }
                 a {
@@ -155,7 +178,6 @@
 .us-brief {
     .company-image {
         float: left;
-        width: 250px;
     }
     p {
         color: #777;
@@ -166,9 +188,8 @@
 
 .chairman-message {
     .chairman-image {
-        width: 272px;
+        margin-right: 15px;
         float: left;
-        // margin-bottom: 80px;
         p {
             text-indent: 0px;
         }
@@ -186,9 +207,83 @@
 }
 
 .history {
-    p {
-        color: #777;
+    .background1 {
         text-indent: 35px;
+        background: #FDF5E6;
+        padding-bottom: 1px;
+
+        p:first-child {
+            padding-top: 15px
+        }
+    }
+    .background2 {
+        text-indent: 35px;
+        background: #FAFAD2;
+        padding-bottom: 5px;
+
+        p:first-child {
+            padding-top: 15px
+        }
+    }
+    .img1950 {
+        position: relative;
+        float: right;
+        margin-right: 15%;
+        margin-top: 5px;
+        height: 151px;
+        width: 64px;
+    }
+    .img1970-1 {
+        position: relative;
+        float: right;
+        margin-top: 20px;
+        height: 136px;
+        width: 107px;
+    }
+    .img1970-2 {
+        position: relative;
+        float: right;
+        margin-top: 20px;
+        height: 136px;
+        width: 111px;
+    }
+    .img1970-3 {
+        position: relative;
+        float: right;
+        margin-right: 5%;
+        margin-top: 20px;
+        height: 136px;
+        width: 63px;
+    }
+    .img1990-1 {
+        position: relative;
+        float: right;
+        margin-top: -20px;
+        margin-right: 10%;
+        height: 105px;
+        width: 83px;
+    }
+    .img1990-2 {
+        position: relative;
+        float: right;
+        margin-right: 10%;
+        height: 81px;
+        width: 134px;
+    }
+    .img1990-3 {
+        position: relative;
+        float: right;
+        margin-right: 10%;
+        height: 112px;
+        width: 162;
+    }
+    .img2000 {
+        position: relative;
+        float: right;
+        margin-right: 5%;
+        margin-top: 20px;
+        width: 220px;
+        height: 220px;
     }
 }
 

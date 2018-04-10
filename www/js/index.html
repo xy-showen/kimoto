@@ -11,19 +11,24 @@
 </head>
 
 <body class="main">
-    <div ng-controller="MainCtrl">
+    <div class="header margin-top-5">
+        <img class="logo pull-left" src="/static/image/logo.bmp">
+        <a class="lang pull-right" href="http://www.kimoto-electric.co.jp/english/index.html" target='_blank'>English</a>
         <img class="header-image" src="/static/image/header.jpg">
-        <nav class="navbar navbar-default">
-            <ul class="nav navbar-nav">
+    </div>
+    <div ng-controller="MainCtrl">
+        <div class="margin-top-5">
+            <nav class="navbar navbar-default">
+                <ul class="nav navbar-nav">
                 <li class="text-center first-level">
                     <a href="/home">首页</a>
                 </li>
-                <li class="text-center first-level">
+<!--                 <li class="text-center first-level">
                     <a href="/news/list">新闻中心</a>
-                </li>
+                </li> -->
                 <li class="text-center first-level">
                     <a href="#">
-                        关于我们
+                        公司介绍
                         <span class="caret"></span>
                     </a>
                     <div class="second-level">
@@ -31,10 +36,10 @@
                             <a href="/us/brief">公司简介</a>
                         </div>
                         <div class="second-div">
-                            <a href="/us/chairman">董事长寄语</a>
+                            <a href="/us/chairman">社长寄语</a>
                         </div>
                         <div class="second-div">
-                            <a href="/us/history">总部历史</a>
+                            <a href="/us/history">历史沿革</a>
                         </div>
                     </div>
                 </li>
@@ -45,16 +50,13 @@
                     </a>
                     <div class="second-level">
                         <div class="second-div">
-                            <a href="/product/chemical-list">化学成分检测系统</a>
-                        </div>
-                        <div class="second-div">
                             <a href="/product/chemical-list">大气环境监测系统</a>
                         </div>
                         <div class="second-div">
-                            <a href="/product/chemical-list">雾霾成因观测系统</a>
+                            <a href="/product/chemical-list">海洋环境监测系统</a>
                         </div>
                         <div class="second-div">
-                            <a href="/product/chemical-list">海洋环境监测系统</a>
+                            <a href="/product/chemical-list">整体观测解决方案</a>
                         </div>
                     </div>
                 </li>
@@ -89,9 +91,9 @@
                         </div>
                     </div>
                 </li>
-                <li class="last"><a href="http://www.kimoto-electric.co.jp/english/index.html" target='_blank'>English</a></li>
-            </ul>
-        </nav>
+                </ul>
+            </nav>
+        </div>
     </div>
     <div ui-view>
     </div>
